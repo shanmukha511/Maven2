@@ -15,4 +15,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>shanmukha511-releases</name>
+        <url>https://shanmukha511.jfrog.io/shanmukha511/test</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>shanmukha511-snapshots</name>
+        <url>https://shanmukha511.jfrog.io/shanmukha511/test</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
