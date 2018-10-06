@@ -10,7 +10,7 @@ pipeline
   {
   steps
   {
-  shell(script:"mvn clean install")
+  sh(script:"mvn clean install")
   }
   }
   }
