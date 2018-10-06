@@ -6,7 +6,7 @@ RUN mkdir /maven1
 RUN apt-get -y update && apt-get -y install default-jdk && apt-get -y install python
 COPY target/*.jar /maven1
 COPY helloworld.py /maven1
-CMD ["python","helloworld.py"]
+CMD ["python","/maven1/helloworld.py"]
 #CMD pwd &&\
  #uptime &&\
  #whoami
