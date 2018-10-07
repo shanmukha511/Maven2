@@ -13,7 +13,7 @@ pipeline
   sh(script:"mvn clean install")
   }
   }
-  }
+  
   stage("Docker12")
   {
   steps
@@ -23,6 +23,7 @@ pipeline
   sh(script:"docker login -u shanmukha511 -p @Raviteja511")
   sh(script:"docker push  shanmukha511/dockerimages")
   sh(script:"docker run --rm shanmukha511/dockerimages:${BUILD_NUMBER}")
+  }
   }
   }
   }
