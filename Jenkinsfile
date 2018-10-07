@@ -14,7 +14,7 @@ pipeline
   }
   }
   }
-  stage("Docker")
+  stage("Docker12")
   {
   steps
   {
@@ -25,4 +25,5 @@ pipeline
   sh(script:"docker run --rm shanmukha511/dockerimages:${BUILD_NUMBER}")
   }
   }
+}
 }
