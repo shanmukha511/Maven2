@@ -18,7 +18,7 @@ pipeline
   {
   steps
   {
-  sh(script:"docker build -t myimage")
+  sh(script:"docker build -t myimage .")
   sh(script:"docker tag testimage shanmukha511/dockerimages:${BUILD_NUMBER}")
   sh(script:"docker login -u shanmukha511 -p @Raviteja511")
   sh(script:"docker push  shanmukha511/dockerimages")
