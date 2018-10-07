@@ -25,5 +25,5 @@ pipeline
   sh(script:"docker run --rm shanmukha511/dockerimages:${BUILD_NUMBER}")
   }
   }
-}
-}
+  }
+
